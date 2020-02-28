@@ -15,6 +15,7 @@ class Client
     const HTTP_POST = 'POST';
     const DEFAULT_SCOPE = 'basic';
     const DEFAULT_GRANT_TYPE = 'authorization_code';
+    const DEFAULT_RESPONSE_TYPE = 'code';
 
     /** @var string */
     private $responseType;
@@ -44,6 +45,7 @@ class Client
         $this->scope = self::DEFAULT_SCOPE;
         $this->clientSecret = $clientSecret;
         $this->grantType = self::DEFAULT_GRANT_TYPE;
+        $this->responseType = self::DEFAULT_RESPONSE_TYPE;
 
         $this->httpClient = new \GuzzleHttp\Client([
             \GuzzleHttp\RequestOptions::HEADERS => [
