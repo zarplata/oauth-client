@@ -1,0 +1,20 @@
+{
+    "name": "followmelistenme/zarplata-oauth-client",
+    "description": "OAuth authorization client for www.zarplata.ru",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Zanilo Stanislav",
+            "email": "hoopmixtape94@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^6.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "ZpOAuth\\": "src/"
+        }
+    }
+}
