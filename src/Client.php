@@ -20,7 +20,7 @@ class Client
     /** @var string */
     private $responseType;
 
-    /** @var int */
+    /** @var string */
     private $clientID;
 
     /** @var string */

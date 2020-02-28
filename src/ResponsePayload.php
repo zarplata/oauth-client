@@ -100,6 +100,11 @@ class ResponsePayload
 
             $invalidPayloadFields[] = $requiredKey;
         }
+
+        if (!$invalidPayloadFields) {
+            return;
+        }
+
         $messagePattern = count($invalidPayloadFields) > 1 ? '%s fields are required' : '%s field is required';
 
         throw new InvalidPayloadException(
