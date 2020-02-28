@@ -1,7 +1,7 @@
 <?php
 
 
-namespace ZpOAuth;
+namespace ZpOauth;
 
 
 use Psr\Http\Message\ResponseInterface;

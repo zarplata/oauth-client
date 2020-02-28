@@ -1,7 +1,7 @@
 <?php
 
 
-namespace ZpOAuth;
+namespace ZpOauth;
 
 
 class Response extends \GuzzleHttp\Psr7\Response

@@ -1,6 +1,6 @@
 <?php
 
-namespace ZpOAuth;
+namespace ZpOauth;
 
 use GuzzleHttp\Exception\ClientException;
 use GuzzleHttp\Exception\RequestException;
