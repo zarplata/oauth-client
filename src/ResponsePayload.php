@@ -45,6 +45,50 @@ class ResponsePayload
         return $this;
     }
 
+    /**
+     * @return int
+     */
+    public function getExpiresIn()
+    {
+        return $this->expiresIn;
+    }
+
+    /**
+     * @return string
+     */
+    public function getAccessToken()
+    {
+        return $this->accessToken;
+    }
+
+    /**
+     * @return string
+     */
+    public function getScope()
+    {
+        return $this->scope;
+    }
+
+    /**
+     * @return int
+     */
+    public function getUserID()
+    {
+        return $this->userID;
+    }
+
+    /**
+     * @return string
+     */
+    public function getRefreshToken()
+    {
+        return $this->refreshToken;
+    }
+
+    /**
+     * @param array $payload
+     * @throws InvalidPayloadException
+     */
     private function mapToPayload(array $payload)
     {
         $invalidPayloadFields = [];
