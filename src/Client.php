@@ -40,7 +40,7 @@ class Client
 
     public function __construct($clientID, $redirectURI, $clientSecret)
     {
-        $this->clientID = $clientID;
+        $this->clientID = (string) $clientID;
         $this->redirectURI = $redirectURI;
         $this->scope = self::DEFAULT_SCOPE;
         $this->clientSecret = $clientSecret;
